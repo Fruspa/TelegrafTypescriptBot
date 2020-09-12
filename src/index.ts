@@ -1,6 +1,6 @@
 import Telegraf from 'telegraf';
 
-const bot = new Telegraf(require('./api_token.json').token)
+const bot = new Telegraf(require('../data/api_token.json').token)
 
 bot.use(async (ctx, next) => {
   const start = new Date()
